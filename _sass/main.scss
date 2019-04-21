@@ -7,14 +7,13 @@ html {
   background: #C0E2DF;
 }
 .current {
-    color: green;
+    color: rgb(230, 62, 174);
   }
 
 // Body layout Styles
-
 .body {
-  height: 100em;
   display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
   grid-template-areas:
   "leftcol content content";
 }
@@ -22,5 +21,6 @@ html {
   grid-area: content;
 }
 .leftcol {
+  margin: 0 1em 0 0;
   grid-area: leftcol;
 }

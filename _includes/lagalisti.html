@@ -1,6 +1,6 @@
 {% for item in site.data.songs %}
-{% if page.short_name == item.nafn %}    
-    <h2>{{ item.nafn | capitalize }}</h2>
+{% if page.short_name == item.nafn %}  
+    <h2>{{ page.nafn | camelcase }}</h2>
     <ol class="lagalisti">
         <li class="lag" id="lag1">{{ item.lag1 }}</li>
         <li class="lag" id="lag2">{{ item.lag2 }}</li>

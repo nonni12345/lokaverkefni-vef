@@ -17,3 +17,6 @@
     - Kláraði for loopuna í lagalisti
     - kláraði songs.yml
     - lagaði bug með flytjendur navigationið
+    - byrjaði á leftcol
+    - addaði dagskrá inn í leftcol
+    - setti upp leftcol layoutið

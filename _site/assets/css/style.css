@@ -7,17 +7,18 @@ html {
   background: #C0E2DF; }
 
 .current {
-  color: green; }
+  color: #e63eae; }
 
 .body {
-  height: 100em;
   display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
   grid-template-areas: "leftcol content content"; }
 
 .content {
   grid-area: content; }
 
 .leftcol {
+  margin: 0 1em 0 0;
   grid-area: leftcol; }
 
 .logo {
@@ -130,3 +131,18 @@ header {
 
 .lag {
   margin: 5px 0; }
+
+.leftcol {
+  border-right: 2px solid #2C514C; }
+
+dl {
+  font-size: 1.5em; }
+
+.field {
+  width: fit-content;
+  margin: 10px 0 0 20px; }
+  .field ul {
+    margin: 0;
+    padding: 5px; }
+  .field li {
+    margin: 10px 0 0 0; }
