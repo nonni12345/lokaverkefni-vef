@@ -25,3 +25,6 @@
     - Gerði flytjenda pages meira responsive
     - Gerði cool responsive feature fyrir lagalista
     - Addaði flytjenda aðdáðendaklúbb form
+
+* **21.04** - Sesselja
+    - Setti favicon
