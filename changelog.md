@@ -20,3 +20,8 @@
     - byrjaði á leftcol
     - addaði dagskrá inn í leftcol
     - setti upp leftcol layoutið
+
+* **21.04** - Nonni
+    - Gerði flytjenda pages meira responsive
+    - Gerði cool responsive feature fyrir lagalista
+    - Addaði flytjenda aðdáðendaklúbb form

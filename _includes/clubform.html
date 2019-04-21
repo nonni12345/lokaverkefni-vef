@@ -1,0 +1,21 @@
+<button class="togglebtn" onclick="toggle()">Aðdáðandaklúbbur SignUp</button> 
+<fieldset class="clubField" id="form">
+<legend>Aðdáðendaklúbbur fyrir {{ page.nafn }}</legend>
+    <form class="clubForm" onsubmit="submit()">
+        <input type="text" placeholder="Fullt Nafn" class="text" required> <input type="text" placeholder="Heimilisfang" required class="text">
+        <br>
+        <input class="text" id="postfang" type="number" placeholder="Póstfang" required>
+        <input type="email" placeholder="Email" class="text" required>
+        <br>
+        <select class="kyn" required>
+                <option selected>Veldu Kyn</option>
+                <option value="Male">Male</option>
+                <option value="Female">Female</option>
+                <option value="Other">Other</option>
+            </select>
+        <hr>
+        <div class="end">
+            <input type="submit"> <input type="reset">
+        </div>
+    </form>
+</fieldset>

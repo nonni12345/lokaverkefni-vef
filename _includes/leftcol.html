@@ -1,12 +1,16 @@
-<h2>Verðum að ákveða hvað á að setja hér (Leftcol)</h2>
 <fieldset class="field">
-<legend>Dagskrá</legend>
+<legend class="dagskraTitle">Dagskrá</legend>
 
-<ul>
+<ul class="dagskra">
     {% for item in site.data.dagskra %}
-    <li>
-    <h2>{{ item.dagur }}</h2>
-        {{ item.hlutur }}</li>
+  <li>
+    <h2 class="dagur"> {{ item.dagur }}</h2>
+        {{ item.hlutur1 }}
+  </li>
+    <!-- Checkar hvort hlutur2 sé til -->
+    {% if item.hlutur2 %}    
+      <li>{{ item.hlutur2 }}</li>
+    {% endif %}
     {% endfor %}
 </ul>
 </fieldset>

@@ -1,0 +1,46 @@
+
+// Responsive fyrir leftcol
+@media (max-width: 900px) {
+    .dagskra {
+        font-size: 0.7em;
+    }
+    .field {
+        border: none;
+    }
+}
+
+
+
+@media (max-width: 650px ) {
+    .hr {
+        display: none;
+    }
+    .lagTitle {
+        margin: 0 0 20px 0;
+    }
+    .lagalisti {
+        padding: 0;
+    }
+    .leftcol {
+        border: none;
+    }
+    .field {
+        border: 3px solid #2C514C;
+    }
+}
+
+// Responsive for the general body part
+
+@media (max-width: 650px ) {
+    .body {
+        margin: 15px 0 0 0;
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-areas:
+        "content"
+        "leftcol"; 
+    }
+    .content {
+        text-align: center;
+    }
+}

@@ -1,6 +1,12 @@
 - dagur: Miðvikudagur
-  hlutur: Upphitunartónleikar
-  hlutur: UwU
+  hlutur1: Upphitunartónleikar
 
 - dagur: Fimmtudagur
-  hlutur: Aðal Tónleikar
+  hlutur1: Aðal Tónleikar
+
+- dagur: Föstudagur
+  hlutur1: Aukatónleikar
+  hlutur2: Eftirpartý
+
+- dagur: Laugardagur
+  hlutur1: Flytjendur með hittinga á básum
