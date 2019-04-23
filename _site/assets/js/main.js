@@ -1,3 +1,5 @@
+var x = document.getElementById("form");
+x.style.display = "block";
 function toggle() {
     var x = document.getElementById("form");
     if (x.style.display === "none") {
@@ -6,7 +8,7 @@ function toggle() {
       x.style.display = "none";
     }
   }
-  
+
 function submit() {
     window.alert("Submission Mótekin");
 }

@@ -1,13 +1,13 @@
 .togglebtn {
     border: 1px solid;
-    background-color: rgba($color: #42f4e8, $alpha: 50%);
+    background-color: rgba($color: #42f4e8, $alpha: 0.4);
     padding: 7px;
     font-size: 15px;
     margin: 5px 0 10px 0;
     cursor: pointer;
 }
 .togglebtn:hover {
-    background-color: rgba($color: #3accc2, $alpha: 50%);
+    background-color: rgba($color: #3accc2, $alpha: 0.4);
 }
 #form {
     display: none;
@@ -22,13 +22,13 @@
         padding: 3px;
         margin: 0 0 10px 0;
         height: 20px;
-        background-color: rgba(0, 81, 255, 10%);
+        background-color: rgba(0, 81, 255, 0.2);
     }
     select {
         padding: 3px;
         margin: 0 0 10px 0;
         height: 25px;
-        background-color: rgba(0, 81, 255, 50%);
+        background-color: rgba(0, 81, 255, 0.3);
     }
 }
 .end {
@@ -37,6 +37,6 @@
     input {
         padding: 7px;
         border-radius: 15%;
-        background-color: rgba(167, 134, 255, 0.486);
+        background-color: rgba(167, 134, 255, 0.4);
     }
 }
