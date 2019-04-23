@@ -199,14 +199,14 @@ header {
     text-align: center; } }
 .togglebtn {
   border: 1px solid;
-  background-color: #42f4e8;
+  background-color: rgba(66, 244, 232, 0.5);
   padding: 7px;
   font-size: 15px;
   margin: 5px 0 10px 0;
   cursor: pointer; }
 
 .togglebtn:hover {
-  background-color: #3accc2; }
+  background-color: rgba(58, 204, 194, 0.5); }
 
 #form {
   display: none;
@@ -220,12 +220,12 @@ header {
   padding: 3px;
   margin: 0 0 10px 0;
   height: 20px;
-  background-color: #0051ff; }
+  background-color: rgba(0, 81, 255, 0.1); }
 .clubForm select {
   padding: 3px;
   margin: 0 0 10px 0;
   height: 25px;
-  background-color: #0051ff; }
+  background-color: rgba(0, 81, 255, 0.5); }
 
 .end {
   font-family: 'Titillium Web', sans-serif;
