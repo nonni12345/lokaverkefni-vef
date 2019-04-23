@@ -1,4 +1,14 @@
 <div class="headercontainer">
-    <h1 class="title">{{ page.title }}</h1>
+    <h1 class="title">
+        {% comment %}
+        Þetta er svo að ef þú ert staðsettur á flytjenda síðu
+        þá er titillinn nafnið á flytjendanum
+        {%endcomment%}
+        {% if page.aldur %}
+            {{ page.nafn }}
+        {% else %}
+            {{ page.title }}
+        {%endif%}
+    </h1>
     <img class="logo" src="/assets/images/logo.svg">
 </div>
