@@ -1,8 +1,8 @@
-- name: Home
+- name: <span class="icon-home"></span> Home
   link: /
 - name: Tónleikar
   link: /
 - name: Flytjendur
   link: /flytjendur.html
-- name: Panta miða
+- name: <span class="icon-cart"></span> Panta miða
   link: /

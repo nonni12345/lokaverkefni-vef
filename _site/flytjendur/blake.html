@@ -19,17 +19,20 @@
     <img class="logo" src="/assets/images/logo.svg">
 </div>
       <label for="toggle" class="menuLabel">
-  <!-- <span class="menuIcon">@</span> -->
   <input type="checkbox" id="toggle" class="menuInput">
+<div class="icons">
+<span class="icon-menu4" id="menu1"></span>
+<span class="icon-menu3" id="menu2"></span>
+</div>
   <nav class="navigation">
     
-      <a href="/" >Home</a>
+      <a href="/" ><span class="icon-home"></span> Home</a>
     
       <a href="/" >Tónleikar</a>
     
       <a href="/flytjendur.html" >Flytjendur</a>
     
-      <a href="/" >Panta miða</a>
+      <a href="/" ><span class="icon-cart"></span> Panta miða</a>
     
   </nav>
 </label>
@@ -100,7 +103,7 @@
 <button class="togglebtn" onclick="toggle()">Aðdáðandaklúbbur SignUp</button> 
 <fieldset class="clubField" id="form">
 <legend>Aðdáðendaklúbbur fyrir Blake Shelton</legend>
-    <form class="clubForm" onsubmit="submit()">
+    <form class="clubForm" onsubmit="submission()">
         <input type="text" placeholder="Fullt Nafn" class="text" required> <input type="text" placeholder="Heimilisfang" required class="text">
         <br>
         <input class="text" id="postfang" type="number" placeholder="Póstfang" required>
@@ -120,6 +123,8 @@
 </fieldset>
     </div>
   </div> 
+  
   <script src="/assets/js/main.js"></script>
+  
   </body>
 </html>

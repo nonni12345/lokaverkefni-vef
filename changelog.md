@@ -28,3 +28,9 @@
 
 * **21.04** - Sesselja
     - Setti favicon
+
+* **23.04** - Nonni
+    - Byrjaði á index.html
+    - Breytti nav dropdown iconinu
+    - Setti inn icomoon fonts og setti nokkur af þeim á navið
+    - 

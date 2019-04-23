@@ -1,3 +1,4 @@
+@charset "UTF-8";
 @import url("https://fonts.googleapis.com/css?family=Fira+Sans|Indie+Flower|Jua|Lobster|Manuale|Nunito:600|Nunito+Sans|Pacifico|Quicksand|Shadows+Into+Light|Titillium+Web|Ubuntu");
 * {
   margin: 0;
@@ -8,6 +9,9 @@ html {
 
 .current {
   color: #e63eae; }
+
+.content {
+  margin-top: 10px; }
 
 .body {
   min-height: 90vh;
@@ -62,6 +66,9 @@ header {
 .menuLabel {
   grid-area: label; }
 
+#menu2 {
+  display: none; }
+
 .navigation {
   transition: right .5s ease-in-out; }
   .navigation a {
@@ -85,15 +92,37 @@ header {
     background-color: #6475c0; }
 
 @media (max-width: 1000px) {
+    /* 
+
+    
+    
+    
+    
+    Nav dropdown glitchaðist og checked animationið vill ekki virka, plz fix - Nonni <3
+
+
+
+
+
+
+    */
   .menuLabel {
     margin: auto 0; }
     .menuLabel .menuInput:checked + .navigation {
-      left: initial;
-      right: 0; }
-    .menuLabel .menuInput:checked + .navigation::before {
-      transform: rotate(90deg); }
-    .menuLabel .navigation::before {
-      content: '@';
+      right: 0px; }
+    .menuLabel .menuInput:checked + .icons #menu1 {
+      display: none; }
+    .menuLabel .menuInput:checked + .icons #menu2 {
+      display: block; }
+    .menuLabel #menu1 {
+      display: block;
+      transition: transform .2s ease-in-out;
+      position: fixed;
+      right: 10px;
+      top: 10px;
+      font-size: 30px; }
+    .menuLabel #menu2 {
+      display: none;
       transition: transform .2s ease-in-out;
       position: fixed;
       right: 10px;
@@ -110,12 +139,14 @@ header {
 
   .navigation {
     position: absolute;
-    right: -350px;
-    max-width: 300px;
+    right: -100em;
+    max-width: 250px;
     background-color: #52706C;
-    padding: 0 0 0 10px;
     border-radius: 3px 0 0 3px; } }
 @media (min-width: 1000px) {
+  #menu1, #menu2 {
+    display: none; }
+
   .menuInput, .menuIcon {
     display: none;
     position: absolute; }
@@ -169,7 +200,10 @@ header {
     font-size: 0.7em; }
 
   .field {
-    border: none; } }
+    border: none; }
+
+  .intro {
+    font-size: 1em; } }
 @media (max-width: 650px) {
   .hr {
     display: none; }
@@ -187,8 +221,8 @@ header {
     border: 3px solid #2C514C; }
 
   #form {
-    margin: 0 auto; } }
-@media (max-width: 650px) {
+    margin: 0 auto; }
+
   .body {
     margin: 15px 0 0 0;
     display: grid;
@@ -241,3 +275,83 @@ header {
   color: #ff78c8; }
 .flytjendur li {
   margin: 10px 0 0 0; }
+
+.intro {
+  font-size: 2em;
+  font-family: "Ubuntu", sans-serif; }
+
+@font-face {
+  font-family: 'icomoon';
+  src: url("/assets/fonts/icomoon.eot?pcdq4r");
+  src: url("/assets/fonts/icomoon.eot?pcdq4r#iefix") format("embedded-opentype"), url("/assets/fonts/icomoon.ttf?pcdq4r") format("truetype"), url("/assets/fonts/icomoon.woff?pcdq4r") format("woff"), url("/assets/fonts/icomoon.svg?pcdq4r#icomoon") format("svg");
+  font-weight: normal;
+  font-style: normal; }
+[class^="icon-"], [class*=" icon-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'icomoon' !important;
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale; }
+
+.icon-home:before {
+  content: "\e900"; }
+
+.icon-image:before {
+  content: "\e90d"; }
+
+.icon-file-text:before {
+  content: "\e922"; }
+
+.icon-cart:before {
+  content: "\e93a"; }
+
+.icon-calendar:before {
+  content: "\e953"; }
+
+.icon-tv:before {
+  content: "\e95b"; }
+
+.icon-bubble:before {
+  content: "\e96b"; }
+
+.icon-user:before {
+  content: "\e971"; }
+
+.icon-users:before {
+  content: "\e972"; }
+
+.icon-menu:before {
+  content: "\e9bd"; }
+
+.icon-menu3:before {
+  content: "\e9bf"; }
+
+.icon-menu4:before {
+  content: "\e9c0"; }
+
+.icon-sphere:before {
+  content: "\e9c9"; }
+
+.icon-facebook:before {
+  content: "\ea91"; }
+
+.icon-instagram:before {
+  content: "\ea92"; }
+
+.icon-twitter:before {
+  content: "\ea96"; }
+
+.icon-youtube:before {
+  content: "\ea9d"; }
+
+.icon-github:before {
+  content: "\eab0"; }
+
+.icon-skype:before {
+  content: "\eac5"; }

@@ -1,6 +1,9 @@
 .menuLabel {
     grid-area: label;
 }
+#menu2 {
+    display: none;
+}
 .navigation { 
     transition: right .5s ease-in-out; 
     a {
@@ -28,18 +31,43 @@
     }
 }
 @media (max-width: 1000px){
+    /* 
+
+    
+    
+    
+    
+    Nav dropdown glitchaðist og checked animationið vill ekki virka, plz fix - Nonni <3
+
+
+
+
+
+
+    */
     .menuLabel {
         margin: auto 0;
-    
         .menuInput:checked + .navigation {
-            left: initial;
-            right: 0;
+            right: 0px;
         }
-        .menuInput:checked + .navigation::before {
-            transform: rotate(90deg);
+        .menuInput:checked + .icons {
+            #menu1 {
+                display: none;
+            }
+            #menu2 {
+                display: block;
+            }   
         }
-        .navigation::before {
-            content: '@';
+        #menu1 {
+            display: block;
+            transition: transform .2s ease-in-out;
+            position: fixed;
+            right: 10px;
+            top: 10px;
+            font-size: 30px;
+        }
+        #menu2 {
+            display: none;
             transition: transform .2s ease-in-out;
             position: fixed;
             right: 10px;
@@ -57,20 +85,20 @@
             font-size: 30px;
         }
     }
-
     .navigation {
-        position: absolute;
-        //left: 101vw;
-        right: -350px;
+        position: absolute; 
+        right: -100em;
         //width: max-content;
-        max-width: 300px;
+        max-width: 250px;
         background-color: #52706C;
-        padding: 0 0 0 10px;
         border-radius: 3px 0 0 3px;
 
     }
 }
 @media (min-width: 1000px){
+    #menu1, #menu2 {
+        display: none;
+    }
     .menuInput, .menuIcon {
         display: none;
         position: absolute;

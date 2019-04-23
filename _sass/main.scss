@@ -9,7 +9,9 @@ html {
 .current {
     color: rgb(230, 62, 174);
   }
-
+.content {
+  margin-top: 10px; // Svo content klessist ekki upp að headerinum
+}
 // Body layout Styles
 .body {
   min-height: 90vh;

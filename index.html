@@ -2,3 +2,12 @@
 layout: default
 title: Home
 ---
+<p class="intro">
+    Velkomin/nn á vefsíðuna hjá Sveit og Tónlist! Við erum áhugamenn sveitatónlistar og stefnum að því hjálpa allskyns tónlistarmönnum að láta drauma þeirra rætast. Við erum að halda útitónleika í Júní 2020 til að heiðra afmælisdag einn flytjenda okkar,
+    {% for i in site.data.navigation %} {% if i.name == "Panta miða" %}
+       Til að panta miða <a href="{{ i.link }}">Smelltu hér</a> 
+    {% endif %}
+    {% if i.name == "Tónleikar" %}
+        fyrir fleira upplýsingar um tónleikana  <a href="{{ i.link }}">Smelltu hér</a>
+    {% endif %} {% endfor %}. Allur gróður frá Útitónleikunum fer í að betur bæta okkur og hjálpar okkur að ná stefnu okkar í að láta drauma rætast
+</p>

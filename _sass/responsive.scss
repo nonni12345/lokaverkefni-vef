@@ -1,17 +1,22 @@
-
-// Responsive fyrir leftcol
 @media (max-width: 900px) {
+    
+    // Responsive fyrir leftcol
     .dagskra {
         font-size: 0.7em;
     }
     .field {
         border: none;
     }
+
+    // Responsive fyrir Index.html
+    .intro {
+        font-size: 1em;
+    }
 }
 
 
 
-@media (max-width: 650px ) {
+@media (max-width: 650px) {
     .hr {
         display: none;
     }
@@ -30,11 +35,8 @@
     #form {
         margin: 0 auto;
     }
-}
 
-// Responsive for the general body part
-
-@media (max-width: 650px ) {
+    // Responsive uppsetning á contentinu ( Allt fyrir neðan header ) 
     .body {
         margin: 15px 0 0 0;
         display: grid;
