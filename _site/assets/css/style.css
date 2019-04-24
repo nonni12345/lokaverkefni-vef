@@ -203,7 +203,8 @@ header {
     border: none; }
 
   .intro {
-    font-size: 1em; } }
+    margin: 20px;
+    font-size: 1.7em !important; } }
 @media (max-width: 650px) {
   .hr {
     display: none; }
@@ -277,6 +278,7 @@ header {
   margin: 10px 0 0 0; }
 
 .intro {
+  margin: 0 10px 0 10px;
   font-size: 2em;
   font-family: "Ubuntu", sans-serif; }
 
