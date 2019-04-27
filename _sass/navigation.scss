@@ -38,6 +38,7 @@
     
     
     Nav dropdown glitchaðist og checked animationið vill ekki virka, plz fix - Nonni <3
+    Held að það sé betra að nota js en ætla samt að prófa að nota ::after (aftur)
 
 
 
@@ -45,6 +46,12 @@
 
 
     */
+    .navigation::before {
+        content: '@';
+        position: fixed;
+        right: 15px;
+        top: 15px;
+    }
     .menuLabel {
         margin: auto 0;
         .menuInput:checked + .navigation {
