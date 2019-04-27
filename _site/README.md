@@ -1,4 +1,4 @@
 # Vef-Lokaverkefni
 ## Eftir Nonna og Sesselju
 
-# Nonni er að Vinna
+# Sessa er að vinna atm
