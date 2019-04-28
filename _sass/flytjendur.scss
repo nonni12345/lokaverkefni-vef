@@ -1,11 +1,25 @@
 .flytjendur {
     a {
-        color: rgb(255, 0, 0)
+        color: rgb(200, 0, 100)
     }
     a:hover {
         color: rgb(255, 120, 200)
     }
     li {
+        * {
+            text-decoration: none;
+            align-self: center;
+        }
+        display: flex;
+        justify-content: center;
+        padding: 10px;
+        border: 2px solid;
+        width: 28em;
         margin: 10px 0 0 0;
     }
+}
+.lysing {
+    margin: 0 0 0 1em;
+    font-size: 1.3em;
+    font-family: Fira Sans,"sans-serif";
 }

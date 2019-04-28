@@ -1,9 +1,9 @@
 .togglebtn {
     border: 1px solid;
     background-color: rgba($color: #42f4e8, $alpha: 0.4);
-    padding: 7px;
-    font-size: 15px;
-    margin: 5px 0 10px 0;
+    padding: 10px;
+    font-size: 18px;
+    margin: 15px 0 10px 0;
     cursor: pointer;
 }
 .togglebtn:hover {
@@ -11,7 +11,8 @@
 }
 #form {
     display: none;
-    width: fit-content;
+    width: fit-content; 
+
 }
 #postfang {
     width: fit-content;
@@ -19,7 +20,7 @@
 .clubForm {
     .text {
         font-family: 'Titillium Web', sans-serif;
-        padding: 3px;
+        padding: 6px;
         margin: 0 0 10px 0;
         height: 20px;
         background-color: rgba(0, 81, 255, 0.2);
@@ -27,15 +28,19 @@
     select {
         padding: 3px;
         margin: 0 0 10px 0;
-        height: 25px;
         background-color: rgba(0, 81, 255, 0.3);
+        -webkit-appearance: none; 
+        -moz-appearance: none;
+        appearance: none;       /* remove default arrow */
+        background: "\e9bd";
     }
 }
 .end {
+    font-size: 1.5em;
     font-family: 'Titillium Web', sans-serif;
     margin: 10px 0 0 0;
     input {
-        padding: 7px;
+        padding: 12px 15px;
         border-radius: 15%;
         background-color: rgba(167, 134, 255, 0.4);
     }

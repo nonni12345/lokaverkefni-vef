@@ -7,6 +7,11 @@ layout: default
 {% for flytjandi in site.flytjendur %}
 <li> 
    <h1> <a href="{{ flytjandi.url }}"> {{ flytjandi.nafn }} </a>  </h1> 
+   <p class="lysing">
+      Nafn: {{ flytjandi.nafn }} <br>
+      Aldur: {{ flytjandi.aldur }} <br>
+      Fæddur: {{ flytjandi.faeddur }}
+   </p>
 </li>
 {% endfor %}
 </ul>

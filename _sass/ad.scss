@@ -1,12 +1,17 @@
 #adlink {
-    padding: 10px 0;
+    font-family: Ubuntu,"sans-serif";
+    padding: 15px 0;
     width: fit-content;
+    height: 21em;
     text-align: center;
     border: 2px solid #2C514C;
     margin: 0 50px 20px 50px;
     text-decoration: none;
+    h2 {
+        margin: 10px;
+    }
     img {
-        width: 100%;
+        width: 15em;
         height: 50%;
     }
 }
