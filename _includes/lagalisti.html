@@ -10,6 +10,11 @@
         <li class="lag" id="lag4">{{ item.lag4 }}</li>
         <li class="lag" id="lag5">{{ item.lag5 }}</li>
     </ol>
+    <audio controls>
+        <source src="/assets/songs/{{ item.songlink }}.ogg" type="audio/ogg">
+        <source src="/assets/songs/{{ item.songlink }}.mp3" type="audio/mpeg">
+        Vafrinn þinn styður ekki tónlistarspilun
+    </audio><br>
 {% endif %}
 {% endfor %}
 

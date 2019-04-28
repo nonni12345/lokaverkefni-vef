@@ -46,16 +46,21 @@
 
 
     */
-    .navigation::before {
-        content: '@';
+    .navigation:before {
+        font-family: 'icomoon' !important;
+        font-size: 30px;
+        content: "\e9bf";
         position: fixed;
         right: 15px;
         top: 15px;
-    }
+      }
     .menuLabel {
         margin: auto 0;
         .menuInput:checked + .navigation {
             right: 0px;
+        }
+        .menuInput:checked + .navigation:before {
+            content: "\e9c0";
         }
         .menuInput:checked + .icons {
             #menu1 {
@@ -93,7 +98,7 @@
         }
     }
     .navigation {
-        position: absolute; 
+        position: absolute;
         right: -100em;
         //width: max-content;
         max-width: 250px;

@@ -34,3 +34,7 @@
     - Breytti nav dropdown iconinu
     - Setti inn icomoon fonts og setti nokkur af þeim á navið
     - 
+
+* **27.04** - Sesselja
+    - Lagaði vill með mobile navið
+    - Setti mp3 files inn í lagalisti

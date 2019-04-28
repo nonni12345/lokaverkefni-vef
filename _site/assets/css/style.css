@@ -1,5 +1,81 @@
 @charset "UTF-8";
 @import url("https://fonts.googleapis.com/css?family=Fira+Sans|Indie+Flower|Jua|Lobster|Manuale|Nunito:600|Nunito+Sans|Pacifico|Quicksand|Shadows+Into+Light|Titillium+Web|Ubuntu");
+@font-face {
+  font-family: 'icomoon';
+  src: url("/assets/fonts/icomoon.eot?pcdq4r");
+  src: url("/assets/fonts/icomoon.eot?pcdq4r#iefix") format("embedded-opentype"), url("/assets/fonts/icomoon.ttf?pcdq4r") format("truetype"), url("/assets/fonts/icomoon.woff?pcdq4r") format("woff"), url("/assets/fonts/icomoon.svg?pcdq4r#icomoon") format("svg");
+  font-weight: normal;
+  font-style: normal; }
+[class^="icon-"], [class*=" icon-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'icomoon' !important;
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale; }
+
+.icon-home:before {
+  content: "\e900"; }
+
+.icon-image:before {
+  content: "\e90d"; }
+
+.icon-file-text:before {
+  content: "\e922"; }
+
+.icon-cart:before {
+  content: "\e93a"; }
+
+.icon-calendar:before {
+  content: "\e953"; }
+
+.icon-tv:before {
+  content: "\e95b"; }
+
+.icon-bubble:before {
+  content: "\e96b"; }
+
+.icon-user:before {
+  content: "\e971"; }
+
+.icon-users:before {
+  content: "\e972"; }
+
+.icon-menu:before {
+  content: "\e9bd"; }
+
+.icon-menu3:before {
+  content: "\e9bf"; }
+
+.icon-menu4:before {
+  content: "\e9c0"; }
+
+.icon-sphere:before {
+  content: "\e9c9"; }
+
+.icon-facebook:before {
+  content: "\ea91"; }
+
+.icon-instagram:before {
+  content: "\ea92"; }
+
+.icon-twitter:before {
+  content: "\ea96"; }
+
+.icon-youtube:before {
+  content: "\ea9d"; }
+
+.icon-github:before {
+  content: "\eab0"; }
+
+.icon-skype:before {
+  content: "\eac5"; }
+
 * {
   margin: 0;
   overflow-x: hidden; }
@@ -107,8 +183,10 @@ header {
 
 
     */
-  .navigation::before {
-    content: '@';
+  .navigation:before {
+    font-family: 'icomoon' !important;
+    font-size: 30px;
+    content: "\e9bf";
     position: fixed;
     right: 15px;
     top: 15px; }
@@ -117,6 +195,8 @@ header {
     margin: auto 0; }
     .menuLabel .menuInput:checked + .navigation {
       right: 0px; }
+    .menuLabel .menuInput:checked + .navigation:before {
+      content: "\e9c0"; }
     .menuLabel .menuInput:checked + .icons #menu1 {
       display: none; }
     .menuLabel .menuInput:checked + .icons #menu2 {
@@ -288,79 +368,3 @@ header {
   margin: 0 15px 0 15px;
   font-size: 1.7em;
   font-family: "Ubuntu", sans-serif; }
-
-@font-face {
-  font-family: 'icomoon';
-  src: url("/assets/fonts/icomoon.eot?pcdq4r");
-  src: url("/assets/fonts/icomoon.eot?pcdq4r#iefix") format("embedded-opentype"), url("/assets/fonts/icomoon.ttf?pcdq4r") format("truetype"), url("/assets/fonts/icomoon.woff?pcdq4r") format("woff"), url("/assets/fonts/icomoon.svg?pcdq4r#icomoon") format("svg");
-  font-weight: normal;
-  font-style: normal; }
-[class^="icon-"], [class*=" icon-"] {
-  /* use !important to prevent issues with browser extensions that change fonts */
-  font-family: 'icomoon' !important;
-  speak: none;
-  font-style: normal;
-  font-weight: normal;
-  font-variant: normal;
-  text-transform: none;
-  line-height: 1;
-  /* Better Font Rendering =========== */
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale; }
-
-.icon-home:before {
-  content: "\e900"; }
-
-.icon-image:before {
-  content: "\e90d"; }
-
-.icon-file-text:before {
-  content: "\e922"; }
-
-.icon-cart:before {
-  content: "\e93a"; }
-
-.icon-calendar:before {
-  content: "\e953"; }
-
-.icon-tv:before {
-  content: "\e95b"; }
-
-.icon-bubble:before {
-  content: "\e96b"; }
-
-.icon-user:before {
-  content: "\e971"; }
-
-.icon-users:before {
-  content: "\e972"; }
-
-.icon-menu:before {
-  content: "\e9bd"; }
-
-.icon-menu3:before {
-  content: "\e9bf"; }
-
-.icon-menu4:before {
-  content: "\e9c0"; }
-
-.icon-sphere:before {
-  content: "\e9c9"; }
-
-.icon-facebook:before {
-  content: "\ea91"; }
-
-.icon-instagram:before {
-  content: "\ea92"; }
-
-.icon-twitter:before {
-  content: "\ea96"; }
-
-.icon-youtube:before {
-  content: "\ea9d"; }
-
-.icon-github:before {
-  content: "\eab0"; }
-
-.icon-skype:before {
-  content: "\eac5"; }
