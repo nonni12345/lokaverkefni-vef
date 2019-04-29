@@ -12,3 +12,15 @@ function toggle() {
 function submission() {
     alert("Submission Mótekin");
 }
+var btn = document.getElementById("panta");
+function hreyfa() {
+  for (var n = 0; n < 100; n++) {
+    btn.style.left = n+"px";
+  }
+  for (var a = 100; a >= 0; a--) {
+    btn.style.left = a+"px";
+  }
+
+}
+btn.addEventListener("mouseover",hreyfa());
+
