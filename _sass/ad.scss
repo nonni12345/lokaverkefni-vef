@@ -19,12 +19,8 @@
         object-fit: cover;
     }
 }
+
 #panta {
-    left: 0;
-    animation-name: slide;
-    animation-duration: 1s;
-    animation-iteration-count: infinite;
-    animation-delay: 1s;
     margin: 10px 0 0 0;
     cursor: pointer;
     font-family: Ubuntu, "sans-serif";
@@ -33,7 +29,12 @@
     border: 2px solid;
     font-size: 1em;
 }
-@keyframes slide {
-    0% { right: 0; }
-    100% { left: 0 }
+.buttondiv {
+    left: 0;
+    animation-name: poop;
+    animation-iteration-count: infinite;
+}
+@keyframes poop {
+    from { left: -10px; }
+    to { left: 10px; }
 }
