@@ -28,11 +28,7 @@
     select {
         padding: 3px;
         margin: 0 0 10px 0;
-        background-color: rgba(0, 81, 255, 0.3);
-        -webkit-appearance: none; 
-        -moz-appearance: none;
-        appearance: none;       /* remove default arrow */
-        background: "\e9bd";
+        background-color: rgba(0, 81, 255, 0.3);   
     }
 }
 .end {

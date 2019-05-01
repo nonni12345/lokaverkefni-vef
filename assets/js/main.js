@@ -12,7 +12,11 @@ function toggle() {
 function submission() {
     alert("Submission Mótekin");
 }
-var btn = document.getElementById("panta");
+var button = document.getElementById("buttondiv");
+function test() {
+  console.log(document.getElementById("buttondiv").style.left);
+}
+
 function hreyfa() {
   for (var n = 0; n < 100; n++) {
     btn.style.left = n+"px";
