@@ -1,0 +1,29 @@
+.tonleikarcontent {
+    display: flex;
+    flex-flow: row;
+    flex-wrap: wrap;
+}
+.tonleikadesc {
+    width: fit-content;
+    max-width: 60%;
+    word-break: break-word;
+}
+
+#tonleikaDagskra {
+    font-family: 'Nunito', sans-serif;
+    width: fit-content;
+    *:not(legend) {
+        padding: 1px;
+    }
+    #tonleikatitle {
+        font-size: 2em;
+    }
+    #dagskraTonleikar {
+        .dagskraListi {
+            margin: 5px 5px 5px 20px;
+            dd {
+                margin-left: 5px;
+            }
+        }
+    }
+}

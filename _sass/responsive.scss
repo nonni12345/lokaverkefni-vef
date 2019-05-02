@@ -37,6 +37,15 @@
         margin: 0 auto;
     }
 
+    // dagskráin á tonleikar.html
+
+    #tonleikaDagskra, #tonleikadesc {
+        margin: auto;
+    }
+    #tonleikadesc {
+        width: 60%;
+    }
+
     // Responsive uppsetning á contentinu ( Allt fyrir neðan header ) 
     .body {
         margin: 15px 0 0 0;

@@ -1,7 +1,7 @@
 - name: <span class="icon-home"></span> Home
   link: /
 - name: <span class="icon-tv"></span> Tónleikar
-  link: /
+  link: /tonleikar.html
 - name: <span class="icon-users"></span> Flytjendur
   link: /flytjendur.html
 - name: <span class="icon-cart"></span> Panta miða
