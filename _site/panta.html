@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, height=device-height">
-    <title>Flytjendur</title>
+    <title></title>
     <link rel="stylesheet" href="/assets/css/style.css">
     <link rel="shortcut icon" type="image/png" href="/assets/images/favicon.png"/>
   </head>
@@ -13,7 +13,7 @@
     <h1 class="title">
         
         
-            Flytjendur
+            
         
     </h1>
     <img class="logo" src="/assets/images/logo.svg">
@@ -30,9 +30,9 @@
     
       <a href="/" ><span class="icon-tv"></span> Tónleikar</a>
     
-      <a href="/flytjendur.html" class="current"><span class="icon-users"></span> Flytjendur</a>
+      <a href="/flytjendur.html" ><span class="icon-users"></span> Flytjendur</a>
     
-      <a href="/panta.html" ><span class="icon-cart"></span> Panta miða</a>
+      <a href="/panta.html" class="current"><span class="icon-cart"></span> Panta miða</a>
     
   </nav>
 </label>
@@ -87,46 +87,40 @@
 </a>
     </div>
     <div class="content">
-    <h1>Flytjendur á Tónleikum hjá Sveit og Tónlist</h1>
-<ul class="flytjendur">
+    <form id="pantaForm" onsubmit="submission()">
+    <fieldset id="pantaField">
+       <!-- 
+        Nafn ✓
+        kyn ✓
+        kennitala ✓
+        heimilisfang
+        velja tónleika
+    -->
 
-<li> 
-   <h1> <a href="/flytjendur/blake.html"> Blake Shelton </a>  </h1> 
-   <p class="lysing">
-      Nafn: Blake Shelton <br>
-      Aldur: 42 <br>
-      Fæddur: 18. Júní, 1976
-   </p>
-</li>
+        <legend id="pantaLegend">Panta Miða</legend>
+        Nafn: <input type="text" placeholder="Fornafn"> <input type="text" placeholder="Eftirnafn"> <br>
+        Kyn: <select>
+            <option value="Veldu Kyn" selected>Veldu Kyn</option>
+            <option value="Karl">Karl</option>
+            <option value="Kona">Kona</option>
+            <option value="Annað">Annað</option>
+        </select><br>
+        Kennitala: <input type="text" placeholder="Kennitala" minlength="10" maxlength="10" size="10" pattern="[0-9]{10}" required><br>
+        Heimilisfang: <input type="text" placeholder="Heimilisfang"><br>
+        <label for="veljaMida" id=veljaMida>
+            Veldu miða:<br>
+            <input type="checkbox" name="veljaMida"> Upphitunartónleikar<br>
+            <input type="checkbox" name="veljaMida"> Aðal Tónleikar<br>
+            <input type="checkbox" name="veljaMida"> Aukatónleikar<br>
+            <input type="checkbox" name="veljaMida"> Eftirpartý<br>
+        </label>
+        Kortanúmer: <input type="text" id="kortanumer" pattern="[0-9]{16}" maxlength="16" minlength="16" placeholder=" 0000000000000000" required><br>
+        Gildir til: <input type="text" id="validthru" pattern="[0-9]{2}[/]{1}[0-9]{2}" maxlength="5" minlength="5" placeholder="00/00" required>
+        CSV: <input type="text" id="csv" pattern="[0-9]{3}" minlength="3" maxlength="3" placeholder="000" required><br>
+        <input type="submit" id="submitbutton">
 
-<li> 
-   <h1> <a href="/flytjendur/bo.html"> Bo Burnham </a>  </h1> 
-   <p class="lysing">
-      Nafn: Bo Burnham <br>
-      Aldur: 28 <br>
-      Fæddur: 21. Ágúst, 1990
-   </p>
-</li>
-
-<li> 
-   <h1> <a href="/flytjendur/brad.html"> Brad Paisley </a>  </h1> 
-   <p class="lysing">
-      Nafn: Brad Paisley <br>
-      Aldur: 46 <br>
-      Fæddur: 28. Október, 1972
-   </p>
-</li>
-
-<li> 
-   <h1> <a href="/flytjendur/john.html"> John Denver </a>  </h1> 
-   <p class="lysing">
-      Nafn: John Denver <br>
-      Aldur: 53 <br>
-      Fæddur: 12. Október, 1997
-   </p>
-</li>
-
-</ul>
+    </fieldset>
+</form>
     </div>
   </div> 
   <script src="/assets/js/main.js"></script>

@@ -1,0 +1,42 @@
+#pantaForm {
+    margin: 30px 10%;
+    box-sizing: border-box;
+    input[type="text"] {
+        font-size: 15px;
+        width: 125px;
+        height: 25px;
+    }
+    font-size: 1.4em;
+    font-family: Ubuntu, "sans-serif";
+    width: fit-content;
+}
+#pantaField {
+    border: 2px solid;
+    *:not(legend) {
+        margin: 10px 0;
+    }
+}
+#pantaLegend {
+    font-size: 1.2em;
+}
+#veljaMida {
+    input[name="veljaMida"] {
+        size: 100px;
+    }
+}
+#kortanumer {
+    width: 17ch !important;
+}
+#validthru {
+    width: 5.5ch !important;
+}
+#csv {
+    width: 3.5ch !important;
+}
+#submitbutton {
+    margin: auto;
+    width: 40%;
+    height: 35px;
+    border: 1px solid;
+    border-radius: 4px;
+}
