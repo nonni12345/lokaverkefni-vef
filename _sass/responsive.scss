@@ -63,11 +63,32 @@
 
     .flytjendur {
         li {
+            width: fit-content;
+            margin: auto;
             display: block;
             border: none;
         }
     }
+    .lysing {
+        margin: 0;
+    }
     #pantaForm {
         margin: auto;
+    }
+    .myndband {
+        margin: 0 !important;
+        * {
+            margin: 0 !important;
+        }
+    }
+    .myndband {
+        width: 100vw;
+        iframe {
+            width: 100vw;
+        }
+        h1 {
+            display: none;
+            width: fit-content;
+        }
     }
 }

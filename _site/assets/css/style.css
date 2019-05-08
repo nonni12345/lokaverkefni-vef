@@ -337,12 +337,14 @@ source {
   color: #ff78c8; }
 .flytjendur li {
   display: flex;
+  align-self: center;
   justify-content: center;
   padding: 10px;
   border: 2px solid;
   width: 28em;
   margin: 10px 0 0 0; }
   .flytjendur li * {
+    width: fit-content;
     text-decoration: none;
     align-self: center; }
 
@@ -351,11 +353,25 @@ source {
   font-size: 1.3em;
   font-family: Fira Sans,"sans-serif"; }
 
+#homeimage {
+  position: absolute;
+  width: 100%;
+  margin-left: -16px;
+  margin-top: -10px; }
+
 .intro {
   margin: 0 15px 0 15px;
   font-size: 1.7em;
   font-family: "Ubuntu", sans-serif;
   line-height: 1.5em; }
+
+.myndband {
+  margin: 20px 0 0 2%; }
+  .myndband iframe {
+    margin: 12px 0 0 2%;
+    width: 90%;
+    max-width: 560px;
+    height: 315px; }
 
 #adlink {
   font-family: Ubuntu,"sans-serif";
@@ -438,7 +454,8 @@ source {
 .tonleikadesc {
   width: fit-content;
   max-width: 60%;
-  word-break: break-word; }
+  word-break: break-word;
+  margin: 20px auto; }
 
 #tonleikaDagskra {
   font-family: 'Nunito', sans-serif;
@@ -497,8 +514,26 @@ source {
     text-align: center; }
 
   .flytjendur li {
+    width: fit-content;
+    margin: auto;
     display: block;
     border: none; }
 
+  .lysing {
+    margin: 0; }
+
   #pantaForm {
-    margin: auto; } }
+    margin: auto; }
+
+  .myndband {
+    margin: 0 !important; }
+    .myndband * {
+      margin: 0 !important; }
+
+  .myndband {
+    width: 100vw; }
+    .myndband iframe {
+      width: 100vw; }
+    .myndband h1 {
+      display: none;
+      width: fit-content; } }

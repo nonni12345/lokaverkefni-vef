@@ -7,10 +7,12 @@
     }
     li {
         * {
+            width: fit-content;
             text-decoration: none;
             align-self: center;
         }
         display: flex;
+        align-self: center;
         justify-content: center;
         padding: 10px;
         border: 2px solid;

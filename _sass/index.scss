@@ -1,6 +1,22 @@
+#homeimage {
+    position: absolute;
+    width: 100%;
+    margin-left: -16px;
+    margin-top: -10px;  
+}
+
 .intro {
     margin: 0 15px 0 15px;
     font-size: 1.7em;
     font-family: "Ubuntu", sans-serif;
     line-height: 1.5em;
+}
+.myndband {
+    margin: 20px 0 0 2%;
+    iframe {
+        margin: 12px 0 0 2%;
+        width: 90%;
+        max-width: 560px;
+        height: 315px;
+    }
 }
