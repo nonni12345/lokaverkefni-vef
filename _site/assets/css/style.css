@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css?family=Fira+Sans|Indie+Flower|Jua|Lobster|Manuale|Nunito:600|Nunito+Sans|Pacifico|Quicksand|Shadows+Into+Light|Titillium+Web|Ubuntu");
+@import url("https://fonts.googleapis.com/css?family=Fira+Sans|Indie+Flower|Jua|Lobster|Manuale|Nunito:600|Nunito+Sans|Pacifico|Quicksand|Shadows+Into+Light|Titillium+Web|Ubuntu:400,700");
 @font-face {
   font-family: 'icomoon';
   src: url("/assets/fonts/icomoon.eot?pcdq4r");
@@ -299,6 +299,7 @@ source {
   padding: 10px;
   font-size: 18px;
   margin: 15px 0 10px 0;
+  width: fit-content;
   cursor: pointer; }
 
 .togglebtn:hover {
@@ -331,19 +332,30 @@ source {
     border-radius: 15%;
     background-color: rgba(167, 134, 255, 0.4); }
 
+#flytjendurContainer .flytjendaMynd img {
+  width: 90%;
+  height: auto; }
+
+.flytjendurTitle {
+  font-family: Nunito Sans, "sans-serif"; }
+
 .flytjendur {
+  margin: 20px 40px;
   border-left: 2px solid;
-  border-right: 2px solid; }
+  border-right: 2px solid;
+  width: fit-content;
+  padding: 0 20px 0 20px; }
   .flytjendur a {
     color: #c80064; }
   .flytjendur a:hover {
     color: #ff78c8; }
   .flytjendur li {
+    border-bottom: 2px solid;
     display: flex;
     align-self: center;
     justify-content: center;
     padding: 10px 0px;
-    width: 28em;
+    width: fit-content;
     margin: 10px 0 0 0; }
     .flytjendur li * {
       width: fit-content;
@@ -465,10 +477,15 @@ source {
     padding: 1px; }
   #tonleikaDagskra #tonleikatitle {
     font-size: 2em; }
+  #tonleikaDagskra #dagskraTonleikar dt {
+    font-size: 20px; }
   #tonleikaDagskra #dagskraTonleikar .dagskraListi {
     margin: 5px 5px 5px 20px; }
+    #tonleikaDagskra #dagskraTonleikar .dagskraListi dt {
+      font-size: 19px; }
     #tonleikaDagskra #dagskraTonleikar .dagskraListi dd {
-      margin-left: 5px; }
+      margin-left: 15px;
+      max-width: 400px; }
 
 @media (max-width: 900px) {
   .dagskra {
@@ -480,7 +497,7 @@ source {
   .intro {
     margin: 20px;
     font-size: 1.3em !important; } }
-@media (max-width: 700px) {
+@media (max-width: 650px) {
   .hr {
     display: none; }
 
@@ -514,6 +531,9 @@ source {
   .content {
     text-align: center; }
 
+  .flytjendurTitle {
+    font-size: 1.6em; }
+
   .flytjendur li {
     width: fit-content;
     margin: auto;
@@ -538,3 +558,13 @@ source {
     .myndband h1 {
       display: none;
       width: fit-content; } }
+@media (min-width: 650px) {
+  #flytjendurContainer {
+    display: flex;
+    flex-flow: row;
+    align-content: flex-end; }
+    #flytjendurContainer .flytjendaMynd {
+      width: fit-content; }
+      #flytjendurContainer .flytjendaMynd img {
+        width: 10%;
+        height: auto; } }

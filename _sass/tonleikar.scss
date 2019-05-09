@@ -20,10 +20,17 @@
         font-size: 2em;
     }
     #dagskraTonleikar {
+        dt {
+            font-size: 20px;
+        }
         .dagskraListi {
             margin: 5px 5px 5px 20px;
+            dt {
+                font-size: 19px;
+            }
             dd {
-                margin-left: 5px;
+                margin-left: 15px;
+                max-width: 400px;
             }
         }
     }
