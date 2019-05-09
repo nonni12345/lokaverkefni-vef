@@ -2,4 +2,4 @@
 ## Eftir Nonna og Sesselju
 
 
-# sessa uwu bean er að skemma heilasellur með því að vinna í verkefninu also nonni mundu að fara í sturtu
+# Nonni boi er að reyna að gera smá í verkefninu áður en skólinn byrjar yeet

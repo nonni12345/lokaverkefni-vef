@@ -331,22 +331,24 @@ source {
     border-radius: 15%;
     background-color: rgba(167, 134, 255, 0.4); }
 
-.flytjendur a {
-  color: #c80064; }
-.flytjendur a:hover {
-  color: #ff78c8; }
-.flytjendur li {
-  display: flex;
-  align-self: center;
-  justify-content: center;
-  padding: 10px;
-  border: 2px solid;
-  width: 28em;
-  margin: 10px 0 0 0; }
-  .flytjendur li * {
-    width: fit-content;
-    text-decoration: none;
-    align-self: center; }
+.flytjendur {
+  border-left: 2px solid;
+  border-right: 2px solid; }
+  .flytjendur a {
+    color: #c80064; }
+  .flytjendur a:hover {
+    color: #ff78c8; }
+  .flytjendur li {
+    display: flex;
+    align-self: center;
+    justify-content: center;
+    padding: 10px 0px;
+    width: 28em;
+    margin: 10px 0 0 0; }
+    .flytjendur li * {
+      width: fit-content;
+      text-decoration: none;
+      align-self: center; }
 
 .lysing {
   margin: 0 0 0 1em;
