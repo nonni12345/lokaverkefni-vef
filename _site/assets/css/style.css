@@ -358,8 +358,7 @@ source {
 #homeimage {
   position: absolute;
   width: 100%;
-  margin-left: -16px;
-  margin-top: -10px; }
+  bottom: 0; }
 
 .intro {
   margin: 0 15px 0 15px;
