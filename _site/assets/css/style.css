@@ -333,7 +333,7 @@ source {
     background-color: rgba(167, 134, 255, 0.4); }
 
 #flytjendurContainer .flytjendaMynd img {
-  width: 90%;
+  width: 70%;
   height: auto; }
 
 .flytjendurTitle {
@@ -562,9 +562,13 @@ source {
   #flytjendurContainer {
     display: flex;
     flex-flow: row;
-    align-content: flex-end; }
+    flex-wrap: wrap; }
     #flytjendurContainer .flytjendaMynd {
-      width: fit-content; }
+      width: 40%;
+      align-self: center;
+      max-width: 300px;
+      margin: 0 0 0 10px;
+      height: inherit; }
       #flytjendurContainer .flytjendaMynd img {
-        width: 10%;
+        width: 100%;
         height: auto; } }

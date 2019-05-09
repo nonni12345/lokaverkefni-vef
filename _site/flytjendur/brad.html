@@ -87,7 +87,9 @@
 </a>
     </div>
     <div class="content">
-    <h1 class="lagTitle">Lagalisti</h1>
+    <div id="flytjendurContainer">
+    <div id="leftFlytjendur">
+        <h1 class="lagTitle">Lagalisti</h1>
 <hr class="hr">
 
 
@@ -114,7 +116,7 @@
 
 
 <!-- Núna þurfum við að ákveða hvernig við viljum setja þetta upp -->
-<button class="togglebtn" onclick="toggle()">Aðdáðandaklúbbur SignUp</button> 
+        <button class="togglebtn" onclick="toggle()">Aðdáðandaklúbbur SignUp</button> 
 <fieldset class="clubField" id="form">
 <legend>Aðdáðendaklúbbur fyrir Brad Paisley</legend>
     <form class="clubForm" onsubmit="submission()">
@@ -135,6 +137,12 @@
         </div>
     </form>
 </fieldset>
+    </div>
+    <picture class="flytjendaMynd">
+    <source media="(min-width: 650px)" srcset="/assets/images/brad_big.jpeg">
+    <img src="/assets/images/brad_small.jpeg">
+</picture>
+</div>
     </div>
   </div> 
   <script src="/assets/js/main.js"></script>

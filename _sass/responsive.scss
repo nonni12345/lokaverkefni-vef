@@ -100,11 +100,17 @@
     #flytjendurContainer {
         display: flex;
         flex-flow: row;
-        align-content: flex-end;
+        flex-wrap: wrap;
+        //align-content: flex-end;
+
         .flytjendaMynd {
-            width: fit-content;
+            width: 40%;
+            align-self: center;
+            max-width: 300px;
+            margin: 0 0 0 10px;
+            height: inherit;
             img {
-                width: 10%;
+                width: 100%;
                 height: auto;
             }
         }
