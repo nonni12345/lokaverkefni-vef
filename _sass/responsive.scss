@@ -99,8 +99,14 @@
     // tonleikar síðan
 
     .tonleikarcontent {
-        iframe {
-            margin: auto;
+        #iframe {
+            width: fit-content;
+            margin: 20px auto;
+            iframe {
+                margin: 20px 0;
+                max-width: 600px;
+                width: 100vw;
+            }
         }
     }
 }

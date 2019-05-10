@@ -463,12 +463,17 @@ source {
   display: flex;
   flex-flow: row;
   flex-wrap: wrap; }
+  .tonleikarcontent #iframe {
+    margin: 20px 0; }
+    .tonleikarcontent #iframe iframe {
+      margin: 15px 0; }
 
 .tonleikadesc {
   width: fit-content;
   max-width: 60%;
   word-break: break-word;
-  margin: 20px auto; }
+  margin: 20px auto;
+  font-size: 20px; }
 
 #tonleikaDagskra {
   font-family: 'Nunito', sans-serif;
@@ -561,8 +566,13 @@ source {
       display: none;
       width: fit-content; }
 
-  .tonleikarcontent iframe {
-    margin: auto; } }
+  .tonleikarcontent #iframe {
+    width: fit-content;
+    margin: 20px auto; }
+    .tonleikarcontent #iframe iframe {
+      margin: 20px 0;
+      max-width: 600px;
+      width: 100vw; } }
 @media (min-width: 650px) {
   #flytjendurContainer {
     display: flex;

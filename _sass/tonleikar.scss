@@ -2,12 +2,20 @@
     display: flex;
     flex-flow: row;
     flex-wrap: wrap;
+
+    #iframe {
+        margin: 20px 0;
+        iframe {
+            margin: 15px 0;
+        }
+    }
 }
 .tonleikadesc {
     width: fit-content;
     max-width: 60%;
     word-break: break-word;
     margin: 20px auto;
+    font-size: 20px;
 }
 
 #tonleikaDagskra {
