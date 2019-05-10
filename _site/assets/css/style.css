@@ -534,11 +534,13 @@ source {
   .flytjendurTitle {
     font-size: 1.6em; }
 
-  .flytjendur li {
-    width: fit-content;
-    margin: auto;
-    display: block;
-    border: none; }
+  .flytjendur {
+    margin: 20px auto; }
+    .flytjendur li {
+      width: fit-content;
+      margin: auto;
+      display: block;
+      border: none; }
 
   .lysing {
     margin: 0; }
@@ -557,7 +559,10 @@ source {
       width: 100vw; }
     .myndband h1 {
       display: none;
-      width: fit-content; } }
+      width: fit-content; }
+
+  .tonleikarcontent iframe {
+    margin: auto; } }
 @media (min-width: 650px) {
   #flytjendurContainer {
     display: flex;

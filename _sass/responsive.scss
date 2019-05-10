@@ -71,6 +71,7 @@
             display: block;
             border: none;
         }
+        margin: 20px auto;
     }
     .lysing {
         margin: 0;
@@ -92,6 +93,14 @@
         h1 {
             display: none;
             width: fit-content;
+        }
+    }
+
+    // tonleikar síðan
+
+    .tonleikarcontent {
+        iframe {
+            margin: auto;
         }
     }
 }
