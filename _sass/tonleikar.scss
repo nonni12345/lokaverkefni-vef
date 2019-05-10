@@ -15,7 +15,15 @@
     max-width: 60%;
     word-break: break-word;
     margin: 20px auto;
-    font-size: 20px;
+    font-size: 27px;
+    :first-child {
+        margin: 20px 0;
+        font-family: 'Nunitoo', serif;
+    }
+    p {
+        padding: 10px 0;
+        font-family: 'Nunito Sans', sans-serif;
+    }
 }
 
 #tonleikaDagskra {

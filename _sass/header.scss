@@ -12,6 +12,9 @@
     //font-family: ;
 }
 .headercontainer {
+    a {
+        height: fit-content;
+    }
     margin: auto 5px;
     grid-area: header;
     display: flex;
