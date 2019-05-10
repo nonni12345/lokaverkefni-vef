@@ -21,6 +21,11 @@
 }
 
 #panta {
+    animation-name: buttonmove;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate-reverse;
+    animation-timing-function: ease-in-out;
     margin: 10px 0 0 0;
     cursor: pointer;
     font-family: Ubuntu, "sans-serif";
@@ -28,13 +33,16 @@
     padding: 0.8em;
     border: 2px solid;
     font-size: 1em;
+    position: relative;
+    left: 0;
 }
 .buttondiv {
     left: 0;
     animation-name: poop;
     animation-iteration-count: infinite;
 }
-@keyframes poop {
-    from { left: -10px; }
-    to { left: 10px; }
+
+@keyframes buttonmove {
+    from {left: -10%;}
+    to {left: 10%;}
 }

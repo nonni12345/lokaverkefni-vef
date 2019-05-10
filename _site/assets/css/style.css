@@ -403,24 +403,31 @@ source {
     object-fit: cover; }
 
 #panta {
+  animation-name: buttonmove;
+  animation-duration: 1s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate-reverse;
+  animation-timing-function: ease-in-out;
   margin: 10px 0 0 0;
   cursor: pointer;
   font-family: Ubuntu, "sans-serif";
   background-color: #00ffdd;
   padding: 0.8em;
   border: 2px solid;
-  font-size: 1em; }
+  font-size: 1em;
+  position: relative;
+  left: 0; }
 
 .buttondiv {
   left: 0;
   animation-name: poop;
   animation-iteration-count: infinite; }
 
-@keyframes poop {
+@keyframes buttonmove {
   from {
-    left: -10px; }
+    left: -10%; }
   to {
-    left: 10px; } }
+    left: 10%; } }
 #pantaForm {
   margin: 30px 10%;
   box-sizing: border-box;
